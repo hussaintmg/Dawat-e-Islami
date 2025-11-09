@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
+}
+body{
     overflow-x: hidden;
 }
 .nav1{
@@ -158,7 +160,7 @@
 .nav3 >.red:hover{
     background-color: black;
 }
-.nav4{
+.nav4 {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -168,11 +170,11 @@
     border-bottom: 1px solid rgba(128, 128, 128, 0.315);
     border-top: 1px solid rgba(128, 128, 128, 0.315);
     position: sticky;
-    z-index: 99;
     top: 50px;
+    z-index: 1000;
     background-color: white;
-    overflow: visible;
 }
+
 .fs{
     border: none;
     color: rgb(68, 68, 68);
