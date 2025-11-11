@@ -1,277 +1,291 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-.nav1{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.2cm 2cm;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: white;
-    z-index: 100;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+.nav1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2cm 2cm;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.315);
 }
-.nav1 > .col-1{
-    display: flex;
+.nav1 > .col-1 {
+  display: flex;
 }
-.nav1 > .col-1 > span{
-    font-size: large;
-    margin-top: 0.2cm;
+.nav1 > .col-1 > span {
+  font-size: large;
+  margin-top: 0.2cm;
 }
-.row__columns > a{
-    display: flex;
-    padding: 0 0.1cm;
+.row__columns > a {
+  display: flex;
+  padding: 0 0.1cm;
 }
-.row__columns > a >img{
-    border: 3px solid ;
-    border-color: rgba(255, 0, 0, 0);
-    padding: 1px;
-    margin: 4px;
-    transition: border-color 0.2s;
+.row__columns > a > img {
+  border: 3px solid;
+  border-color: rgba(255, 0, 0, 0);
+  padding: 1px;
+  margin: 4px 0;
+  transition: border-color 0.2s;
 }
-.row__columns > a:hover >img{
-    border-color: red;
-    margin: 0px;
+.row__columns > a:hover > img {
+  border-color: red;
+  margin: 0px;
 }
-.row__columns{
-    margin-left: 0.2cm;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.row__columns {
+  margin-left: 0.2cm;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.current>img{
-    width: 27px;
-    height: 27px;
-    padding: 0.5mm;
-    border-radius: 50%;
-    animation: borderchange 1s ease infinite;
+.current > img {
+  width: 27px;
+  height: 27px;
+  padding: 0.5mm;
+  border-radius: 50%;
+  animation: borderchange 1s ease infinite;
 }
 @keyframes borderchange {
-    0%{
-        border-color: red;
-    }
-    50%{
-        border-color: rgba(255, 0, 0, 0);
-    }
-    100%{
-        border-color: red;
-    }
+  0% {
+    border-color: red;
+  }
+  50% {
+    border-color: rgba(255, 0, 0, 0);
+  }
+  100% {
+    border-color: red;
+  }
 }
-.cross{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    margin-top: 0.2cm;
+.cross {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.2cm;
 }
-.cross i{
-    font-size: large;
-    color: #63636b;
+.cross i {
+  font-size: large;
+  color: #63636b;
 }
-.cross:hover i{
-    color: black;
+.cross:hover i {
+  color: black;
 }
-.nav2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    background-color: #3b3b79;
-    width: 100vw;
-    overflow: hidden;
-    height: 45.33px;
-    margin-top: 48px;
+.nav2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background-color: #3b3b79;
+  width: 100vw;
+  overflow: hidden;
+  height: 45.33px;
+  margin-top: 48px;
 }
-.nav2 > .col-1 > img{
-    width: 730px;
-    margin-right: 10px;
+.nav2 > .col-1 > img {
+  width: 730px;
+  margin-right: 10px;
 }
-.nav2 > .col-2,.nav2 > .col-3{
-    height: 100%;
+.nav2 > .col-2,
+.nav2 > .col-3 {
+  height: 100%;
 }
-.nav2 > .col-2 > button,.nav2 > .col-3 > button{
-    height: 100%;
-    padding: 15px;
-    font-size: large;
-    border: none;
-    color: white;
-    cursor: pointer;
-    overflow: visible;
+.nav2 > .col-2 > button,
+.nav2 > .col-3 > button {
+  height: 100%;
+  padding: 15px;
+  font-size: large;
+  border: none;
+  color: white;
+  cursor: pointer;
+  overflow: visible;
 }
-.nav2 > .col-2 > button{
-    background-color: #dea73c;
+.nav2 > .col-2 > button {
+  background-color: #dea73c;
 }
-.nav2 > .col-3 > button{
-    background-color: #d84148;
+.nav2 > .col-3 > button {
+  background-color: #d84148;
 }
-.nav3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 0;
+.nav3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
 }
-.nav3 >a{
-    width: 185px;
-    height: 35px;
-    padding: 0 10px;
-    margin:16px 0;
-    overflow: visible;
+.nav3 > a {
+  width: 185px;
+  height: 35px;
+  padding: 0 10px;
+  margin: 16px 0;
+  overflow: visible;
 }
-.nav3 > a > img{
-    width: 100%;
-    height: 100%;
+.nav3 > a > img {
+  width: 100%;
+  height: 100%;
 }
-.nav3 > .black{
-    display: inline-block;
-    width: 110px;
-    height: 38px;
-    padding: 5px;
-    font-size: 20px;
-    color: white;
-    border: none;
-    background-color: black;
-    cursor: pointer;
-    transition: background-color 0.8s;
+.nav3 > .black {
+  display: inline-block;
+  width: 110px;
+  height: 38px;
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.8s;
 }
-.nav3 >.black:hover{
-    background-color:#d84148;
+.nav3 > .black:hover {
+  background-color: #d84148;
 }
-.nav3 > .red{
-    display: inline-block;
-    width: 199px;
-    height: 38px;
-    padding: 5px;
-    border: none;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    background-color: #d84148;
-    transition: background-color 0.8s;
+.nav3 > .red {
+  display: inline-block;
+  width: 199px;
+  height: 38px;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: #d84148;
+  transition: background-color 0.8s;
 }
-.nav3 >.red:hover{
-    background-color: black;
+.nav3 > .red:hover {
+  background-color: black;
 }
 .nav4 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
-    border-top: 1px solid rgba(128, 128, 128, 0.315);
-    position: sticky;
-    top: 50px;
-    z-index: 1000;
-    background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+  border-top: 1px solid rgba(128, 128, 128, 0.315);
+  position: sticky;
+  top: 50px;
+  z-index: 1000;
+  background-color: white;
 }
 
-.fs{
-    border: none;
-    color: rgb(68, 68, 68);
-    height: 52px;
-    padding: 8px;
-    background-color: transparent;
-    font-size: 12px;
-    cursor: pointer;
-    transition: color 0.3s ease 0.3s;
+.fs {
+  border: none;
+  color: rgb(68, 68, 68);
+  height: 52px;
+  padding: 8px;
+  background-color: transparent;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.3s ease 0.3s;
 }
 .fs > i {
-    overflow: visible;
+  overflow: visible;
 }
-.fs:hover{
-    color: #dc3545;
+.fs:hover {
+  color: #dc3545;
 }
-.ss{
-    border: 1px solid rgba(99, 99, 107, 0.292);
-    background-color: transparent;
-    border-radius: 30px;
-    width: 127px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
-    font-size: 16px;
-    color: rgb(73, 80, 87);
+.ss {
+  border: 1px solid rgba(99, 99, 107, 0.292);
+  background-color: transparent;
+  border-radius: 30px;
+  width: 127px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: 16px;
+  color: rgb(73, 80, 87);
 }
-.ss >span{
-    padding: 10px 10px 8px;
+.ss > span {
+  padding: 10px 10px 8px;
 }
 .ss > i {
-    padding: 10px 15px;
-    border-left: 1px solid rgba(99, 99, 107, 0.292);
-    margin-right: 10px;
-    color: rgb(99, 99, 107);
-    overflow: visible;
+  padding: 10px 15px;
+  border-left: 1px solid rgba(99, 99, 107, 0.292);
+  margin-right: 10px;
+  color: rgb(99, 99, 107);
+  overflow: visible;
 }
-.ts{
-    padding: 5px 20px;
-    margin-left: 10px;
-    height: 38px;
-    background-color: rgb(216, 65, 72);
-    color: white;
-    border: none;
-    font-size: 18px;
-    border-radius: 100px;
+.ts {
+  padding: 5px 20px;
+  margin-left: 10px;
+  height: 38px;
+  background-color: rgb(216, 65, 72);
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 100px;
 }
-.aboutSec,.islamicServiceSec,.socialServiceSec,.departmentsSec,.contactUsSec{
-    position: absolute;
-    flex-direction: column;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid rgba(128, 128, 128, 0.315);
-    border-top: 2px solid red;
-    gap: 5px;
-    display: none;
+.aboutSec,
+.islamicServiceSec,
+.socialServiceSec,
+.departmentsSec,
+.contactUsSec {
+  position: absolute;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  border-top: 2px solid red;
+  gap: 5px;
+  display: none;
 }
-.aboutSec>button,.islamicServiceSec>button,.socialServiceSec>button,.departmentsSec>button,.contactUsSec>button{
-    border: none;
-    color: black;
-    background-color: white;
-    padding: 3px;
-    font-size: 15px;
-    text-align: left;
-    cursor: pointer;
-    transition: color 0.4s;
+.aboutSec > button,
+.islamicServiceSec > button,
+.socialServiceSec > button,
+.departmentsSec > button,
+.contactUsSec > button {
+  border: none;
+  color: black;
+  background-color: white;
+  padding: 3px;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.4s;
 }
-.aboutSec>button:hover,.islamicServiceSec>button:hover,.socialServiceSec>button:hover,.departmentsSec>button:hover,.contactUsSec>button:hover{
-    color: red;
+.aboutSec > button:hover,
+.islamicServiceSec > button:hover,
+.socialServiceSec > button:hover,
+.departmentsSec > button:hover,
+.contactUsSec > button:hover {
+  color: red;
 }
-.about:hover .aboutSec{
-    display: flex;
+.about:hover .aboutSec {
+  display: flex;
 }
-.islamicService:hover .islamicServiceSec{
-    display: flex;
+.islamicService:hover .islamicServiceSec {
+  display: flex;
 }
-.socialService:hover .socialServiceSec{
-    display: flex;
+.socialService:hover .socialServiceSec {
+  display: flex;
 }
-.departments:hover .departmentsSec{
-    display: flex;
+.departments:hover .departmentsSec {
+  display: flex;
 }
-.contactUs:hover .contactUsSec{
-    display: flex;
+.contactUs:hover .contactUsSec {
+  display: flex;
 }
-.article1{
-    width: 100%;
-    position: relative;
-    height: 430px;
-    box-shadow: 0px 3px 10px red;
-    overflow-y: hidden;
+.article1 {
+  width: 100%;
+  position: relative;
+  height: 430px;
+  box-shadow: 0px 3px 10px red;
+  overflow-y: hidden;
 }
-.article1>img{
-    width: 100%;
+.article1 > img {
+  width: 100%;
 }
 .article1 > .content {
   position: absolute;
@@ -280,8 +294,7 @@ body{
   left: 12%;
   z-index: 2;
   opacity: 0;
-  animation:
-    appear 0.8s ease-out forwards,
+  animation: appear 0.8s ease-out forwards,
     bounce 1.7s ease-in-out infinite 0.8s;
 }
 
@@ -290,7 +303,7 @@ body{
     top: 60%;
     opacity: 0;
   }
-  50%{
+  50% {
     opacity: 0.3;
   }
   100% {
@@ -311,16 +324,16 @@ body{
   }
 }
 
-.article1 > .content>h2{
-    font-size: 28px;
-    text-transform: uppercase;
+.article1 > .content > h2 {
+  font-size: 28px;
+  text-transform: uppercase;
 }
-.article1 > .content>h2::first-line{
-    font-size:40px;
+.article1 > .content > h2::first-line {
+  font-size: 40px;
 }
-.article1 > .content>p{
-    font-size: 20px;
-    margin: 0.7cm 0;
+.article1 > .content > p {
+  font-size: 20px;
+  margin: 0.7cm 0;
 }
 .article1 > .content > button {
   margin: 25px 12px 0 5px;
@@ -355,78 +368,78 @@ body{
 }
 
 .article1 > .content > button:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .article1 > .content > button:hover {
   color: #fff;
 }
-.article1>button{
-    position: absolute;
-    top: 50%;
-    width: 48px;
-    height: 76px;
-    opacity: 0;
-    background-color: rgba(255, 255, 255, 0.363);
-    display: flex;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid;
+.article1 > button {
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 76px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.363);
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid;
 }
-.article1:hover >button{
-    opacity: 1;
+.article1:hover > button {
+  opacity: 1;
 }
-.article1>button:hover{
-    background-color: rgba(255, 0, 0, 0.162);
-    color: white;
-    border: 1px solid rgba(255, 0, 0, 0.162);
+.article1 > button:hover {
+  background-color: rgba(255, 0, 0, 0.162);
+  color: white;
+  border: 1px solid rgba(255, 0, 0, 0.162);
 }
-.article1>.btn-1{
-    left: 1%;
-    transition: background-color 0.5s,opacity 0.5s,left 0.5s;
+.article1 > .btn-1 {
+  left: 1%;
+  transition: background-color 0.5s, opacity 0.5s, left 0.5s;
 }
-.article1>.btn-2{
-    right: 1%;
-    transition: background-color 0.5s,opacity 0.5s,right 0.5s;
+.article1 > .btn-2 {
+  right: 1%;
+  transition: background-color 0.5s, opacity 0.5s, right 0.5s;
 }
-.article1:hover>.btn-1{
-    left: 5%;
+.article1:hover > .btn-1 {
+  left: 5%;
 }
-.article1:hover>.btn-2{
-    right: 5%;
+.article1:hover > .btn-2 {
+  right: 5%;
 }
-.article2{
-    width: 100%;
-    height: 604px;
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-image: url(https://resources.dawateislami.net/global/globalhomeweb/resources/assets/images/feature-bg.jpg);
-    background-attachment: fixed;
+.article2 {
+  width: 100%;
+  height: 604px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  background-image: url(https://resources.dawateislami.net/global/globalhomeweb/resources/assets/images/feature-bg.jpg);
+  background-attachment: fixed;
 }
-.article2>.col-1{
-    width: 445px;
+.article2 > .col-1 {
+  width: 445px;
 }
-.article2>.col-1>img{
-    width: 100%;
+.article2 > .col-1 > img {
+  width: 100%;
 }
-.article2>.col-1>h1{
-    font-size: 35px;
-    font-weight: 700;
-    margin: 15px 0 0;
-    color: white;
+.article2 > .col-1 > h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 15px 0 0;
+  color: white;
 }
-.article2>.col-1>p{
-    text-align: justify;
-    font-weight: 400;
-    line-height: 28px;
-    margin: 15px 0 0;
-    color: white;
+.article2 > .col-1 > p {
+  text-align: justify;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 15px 0 0;
+  color: white;
 }
 .article2 > .col-1 > button {
   background: linear-gradient(to right, #e6332f 0, #d84148 60%);
@@ -442,7 +455,7 @@ body{
 }
 
 .article2 > .col-1 > button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -461,39 +474,116 @@ body{
   transform: scale(1);
   z-index: -1;
 }
-.article2 > .col-2{
-    width:665px;
+.article2 > .col-2 {
+  width: 665px;
 }
-.article2>.col-2>.nav{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+.article2 > .col-2 > .nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  gap: 5px;
 }
-.article2>.col-2>.nav>button{
-    width: 90%;
-    height: 40px;
-    white-space: nowrap;
-    padding: 8px 16px;
-    text-align: center;
-    background-color: rgb(51, 51, 51);
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
+.article2 > .col-2 > .nav > button {
+  width: 90%;
+  height: 40px;
+  white-space: nowrap;
+  padding: 8px 16px;
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
 }
-.article2>.col-2>.cards{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 10px;
+.article2 > .col-2 > .cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
 }
-.article2>.col-2>.cards>.card-1,.card-2{
-    width: 100%;
+.article2 > .col-2 > .cards > .card-1,
+.card-2 {
+  background-color: #222427;
+  color: white;
+  width: 100%;
 }
-.article2>.col-2>.cards>.card-1>video,.card-2>video{
-    width: 100%;
+.article2 > .col-2 > .cards > .card-1 > video,
+.card-2 > video {
+  width: 100%;
+}
+.article2 > .col-2 > .cards > .card-1 > .content,
+.card-2 > .content {
+  width: 100%;
+  padding: 22px 30px 30px;
+}
+.article2 > .col-2 > .cards > .card-1 > .content > p,
+.card-2 > .content > p {
+  height: 75px;
+  line-height: 39px;
+  margin: 10px 0 0;
+  text-align: left;
+  color: #fff;
+  font-size: 24px;
+  overflow: hidden;
+  font-weight: 700;
+  width: 100%;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.article2 > .col-2 > .cards > .card-1 > .content > p:hover,
+.card-2 > .content > p:hover {
+  color: rgb(216, 65, 72);
+}
+.article2 > .col-2 > .cards > .card-1 > .content > .buttons,
+.card-2 > .content > .buttons {
+  display: flex;
+  text-align: right;
+}
+.article2 > .col-2 > .cards > .card-1 > .content > .buttons > button,
+.card-2 > .content > .buttons > button {
+  background: #3b3b79;
+  font-size: 18px;
+  height: 45px;
+  z-index: 1;
+  line-height: 45px;
+  margin: 22px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  position: relative;
+  cursor: pointer;
+}
+.article2 > .col-2 > .cards > .card-1 > .content > .buttons > button::before,
+.card-2 > .content > .buttons > button::before {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+  position: absolute;
+  transform: scale(0);
+  content: "";
+  right: 0;
+  margin: auto;
+  background: #1a1829;
+  top: 0;
+  transition: all 0.5s;
+}
+.article2
+  > .col-2
+  > .cards
+  > .card-1
+  > .content
+  > .buttons
+  > button:hover::before,
+.card-2 > .content > .buttons > button:hover::before {
+  opacity: 1;
+  transform: scale(1);
+  z-index:-1;
 }
